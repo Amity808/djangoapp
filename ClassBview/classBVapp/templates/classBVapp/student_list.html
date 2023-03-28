@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'classBVapp/base.html' %}
+
+{% block body_block %}
+ 
+
+    <h1>Student:</h1>
+    {% if student_list %}
+    <table style="border: 1px solid black;">
+        <thead style="border: 2px solid black;">
+            <th>Id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Text Score</th>
+            <th>Text Score</th>
+        </thead>
+        {% for student in student_list %}
+        <tr">
+            <td><a href="/{{student.id}}">{{student.id}}</a></td>
+            <td>{{student.firstName| lower}}</td>
+            <td>{{student.lastName}}</td>
+            <td>{{student.testScore | add:"2"}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>Nothing on student record</p>
+    {% endif %}
+    <a href="/create" style="margin-top: 5rem;">Add Student</a>
+
+{% endblock %}
+
+<!-- to change case to lower {{student.firstName| lower}}
+to add mark for student simply use {{student.firstName | add:'2'}} or search bulit in django filters  -->
