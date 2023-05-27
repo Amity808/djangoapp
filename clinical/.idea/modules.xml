@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/clinical.iml" filepath="$PROJECT_DIR$/.idea/clinical.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../BackendRoad/cliniclrecreact/clinicdata/.idea/clinicdata.iml" filepath="$PROJECT_DIR$/../../BackendRoad/cliniclrecreact/clinicdata/.idea/clinicdata.iml" />
+    </modules>
+  </component>
+</project>
